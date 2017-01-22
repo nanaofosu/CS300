@@ -1,0 +1,47 @@
+/*Variables*/
+body {
+  background-color: #efefef; }
+
+h2 {
+  border-bottom: 1px solid #efefef; }
+
+#content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 4em 3em; }
+  #content-wrapper #left-sidebar {
+    background: red;
+    flex: 2;
+    margin: 0 1em 0 0; }
+    #content-wrapper #left-sidebar #profile-img img {
+      height: auto;
+      max-width: 100%; }
+  #content-wrapper #main {
+    background: white;
+    flex: 6;
+    padding: 1.5em; }
+    #content-wrapper #main .content#bio #bio-text {
+      display: inline-flex;
+      justify-content: space-between;
+      margin: 0 1em; }
+    #content-wrapper #main .content#bio #bio-info {
+      display: flex;
+      justify-content: space-between; }
+      #content-wrapper #main .content#bio #bio-info ul {
+        list-style: none;
+        border: 1px solid #efefef;
+        flex: 1;
+        margin: 0 1em;
+        padding: 0; }
+        #content-wrapper #main .content#bio #bio-info ul li {
+          border-bottom: 1px solid #efefef;
+          display: flex; }
+          #content-wrapper #main .content#bio #bio-info ul li .info {
+            border-right: 1px solid #efefef;
+            font-weight: 900;
+            flex: 1; }
+          #content-wrapper #main .content#bio #bio-info ul li .value {
+            flex: 1; }
+
+/*# sourceMappingURL=style.css.map */

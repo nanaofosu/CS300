@@ -1,0 +1,78 @@
+/*Variables*/
+$gray : #efefef;
+$darker-gray: #999999;
+
+body{
+  background-color: $gray;
+}
+
+h2{
+  border-bottom: 1px solid $gray;
+}
+
+#content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 4em 3em;
+
+  #left-sidebar{
+    background: red;
+    flex: 2;
+    margin: 0 1em 0 0;
+
+    #profile-img{
+      img{
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  #main{
+    background: white;
+    flex: 6;
+    padding: 1.5em;
+
+    .content{
+
+
+
+    &#bio{
+      // This is for the bio div
+      #bio-text{
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 0 1em;
+      }
+
+      #bio-info{
+        display: flex;
+        justify-content: space-between;
+
+        ul{
+          list-style: none;
+          border: 1px solid $gray;
+          flex: 1;
+          margin: 0 1em;
+          padding: 0;
+
+          li{
+            border-bottom: 1px solid $gray;
+            display: flex;
+
+            .info{
+              border-right:  1px solid $gray;
+              font-weight: 900;
+              flex: 1;
+            }
+            .value{
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+}
