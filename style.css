@@ -1,6 +1,7 @@
 /*Variables*/
 body {
-  background-color: #efefef; }
+  background-color: #efefef;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 
 h2 {
   border-bottom: 1px solid #efefef; }
@@ -11,7 +12,6 @@ h2 {
   height: 100%;
   margin: 4em 3em; }
   #content-wrapper #left-sidebar {
-    background: red;
     flex: 2;
     margin: 0 1em 0 0; }
     #content-wrapper #left-sidebar #profile-img img {
@@ -43,5 +43,10 @@ h2 {
             flex: 1; }
           #content-wrapper #main .content#bio #bio-info ul li .value {
             flex: 1; }
+    #content-wrapper #main .content#education .school {
+      font-size: 1.3em;
+      font-weight: 700; }
+    #content-wrapper #main .content#education .year {
+      font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@ $darker-gray: #999999;
 
 body{
   background-color: $gray;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 h2{
@@ -17,9 +18,9 @@ h2{
   margin: 4em 3em;
 
   #left-sidebar{
-    background: red;
     flex: 2;
     margin: 0 1em 0 0;
+
 
     #profile-img{
       img{
@@ -36,43 +37,51 @@ h2{
 
     .content{
 
-
-
-    &#bio{
-      // This is for the bio div
-      #bio-text{
-        display: inline-flex;
-        justify-content: space-between;
-        margin: 0 1em;
-      }
-
-      #bio-info{
-        display: flex;
-        justify-content: space-between;
-
-        ul{
-          list-style: none;
-          border: 1px solid $gray;
-          flex: 1;
+      &#bio{
+        // This is for the bio div
+        #bio-text{
+          display: inline-flex;
+          justify-content: space-between;
           margin: 0 1em;
-          padding: 0;
+        }
 
-          li{
-            border-bottom: 1px solid $gray;
-            display: flex;
+        #bio-info{
+          display: flex;
+          justify-content: space-between;
 
-            .info{
-              border-right:  1px solid $gray;
-              font-weight: 900;
-              flex: 1;
-            }
-            .value{
-              flex: 1;
+          ul{
+            list-style: none;
+            border: 1px solid $gray;
+            flex: 1;
+            margin: 0 1em;
+            padding: 0;
+
+            li{
+              border-bottom: 1px solid $gray;
+              display: flex;
+
+              .info{
+                border-right:  1px solid $gray;
+                font-weight: 900;
+                flex: 1;
+              }
+              .value{
+                flex: 1;
+              }
             }
           }
         }
       }
+
+      &#education{
+        .school{
+          font-size: 1.3em;
+          font-weight: 700;
+        }
+        .year{
+          font-style: italic;
+        }
+      }
     }
-  }
   }
 }
