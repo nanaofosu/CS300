@@ -21,10 +21,15 @@ h2 {
     background: white;
     flex: 6;
     padding: 1.5em; }
+    #content-wrapper #main .content#bio .major {
+      font-weight: 900;
+      margin-left: 1em; }
     #content-wrapper #main .content#bio #bio-text {
       display: inline-flex;
       justify-content: space-between;
       margin: 0 1em; }
+      #content-wrapper #main .content#bio #bio-text p {
+        padding: 0 1em; }
     #content-wrapper #main .content#bio #bio-info {
       display: flex;
       justify-content: space-between; }
@@ -36,17 +41,27 @@ h2 {
         padding: 0; }
         #content-wrapper #main .content#bio #bio-info ul li {
           border-bottom: 1px solid #efefef;
-          display: flex; }
+          display: flex;
+          text-align: center; }
+          #content-wrapper #main .content#bio #bio-info ul li > span {
+            padding: 10px; }
           #content-wrapper #main .content#bio #bio-info ul li .info {
             border-right: 1px solid #efefef;
             font-weight: 900;
             flex: 1; }
           #content-wrapper #main .content#bio #bio-info ul li .value {
             flex: 1; }
+    #content-wrapper #main .content#education ul li {
+      line-height: 2em; }
     #content-wrapper #main .content#education .school {
       font-size: 1.3em;
       font-weight: 700; }
     #content-wrapper #main .content#education .year {
       font-style: italic; }
+    #content-wrapper #main .content .skills ul {
+      column-count: 3;
+      list-style: none; }
+      #content-wrapper #main .content .skills ul li {
+        line-height: 2em; }
 
 /*# sourceMappingURL=style.css.map */

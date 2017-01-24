@@ -39,10 +39,18 @@ h2{
 
       &#bio{
         // This is for the bio div
+        .major{
+          font-weight: 900;
+          margin-left: 1em;
+        }
         #bio-text{
           display: inline-flex;
           justify-content: space-between;
           margin: 0 1em;
+
+          p{
+            padding: 0 1em;
+          }
         }
 
         #bio-info{
@@ -59,6 +67,11 @@ h2{
             li{
               border-bottom: 1px solid $gray;
               display: flex;
+              text-align: center;
+
+              >span{
+                padding: 10px;
+              }
 
               .info{
                 border-right:  1px solid $gray;
@@ -74,12 +87,27 @@ h2{
       }
 
       &#education{
+        ul{
+          li{
+            line-height: 2em;
+          }
+        }
         .school{
           font-size: 1.3em;
           font-weight: 700;
         }
         .year{
           font-style: italic;
+        }
+      }
+
+      .skills{
+        ul{
+          column-count: 3;
+          list-style: none;
+          li{
+            line-height: 2em;
+          }
         }
       }
     }
