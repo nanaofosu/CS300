@@ -63,5 +63,10 @@ h2 {
       list-style: none; }
       #content-wrapper #main .content .skills ul li {
         line-height: 2em; }
+    #content-wrapper #main .content .exp {
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+      margin-left: 2.5em;
+      border-bottom: 1px dotted #efefef; }
 
 /*# sourceMappingURL=style.css.map */
