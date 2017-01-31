@@ -1,8 +1,14 @@
 * {
   margin: 0; }
 
+body {
+  background-color: aqua; }
+
 .wrapper {
   background-color: aqua; }
+  .wrapper .banner img {
+    display: block;
+    margin: auto; }
 
 #game {
   display: flex;
