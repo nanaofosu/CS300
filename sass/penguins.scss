@@ -1,9 +1,20 @@
 *{
     margin: 0;
 }
+body{
+     background-color: aqua;
+}
 .wrapper{
     background-color: aqua;
+    
+    .banner{
+        img{
+            display: block;
+            margin: auto;
+        }
+    }
 }
+
 
 #game{
     display: flex;
