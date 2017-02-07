@@ -1,0 +1,100 @@
+.wrapper{
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    
+    .trigger{
+        &:hover{
+            display: none;
+            transition: all 2s;
+        }
+    }
+    
+    .feature{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(244, 244, 243);
+        padding: 20px;
+        
+        #right{
+            img{
+                max-width: 550px;
+            }
+        }
+    }
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    
+    #logo{
+        background-image: url(../images/recipe/logo.png);
+        width: 220px;
+        height: auto;
+    }
+
+    .access{
+        ul{
+            display: inline-flex;
+            list-style: none;
+            
+            li{
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.navbar{
+    &.active{
+        
+        transition: all 2s;
+    }
+    ul{
+        width: 100%;
+        list-style: none;
+        background-color:  rgba(5, 21, 8, 0.2);
+        
+        li{
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+            line-height: 40px;
+            font-size: 30px;
+        }
+    }
+}
+
+.cooking{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    li{
+            margin-bottom: 10px;
+        }
+    
+    h2{
+        border-bottom: 1px solid #e0e0e0;
+        line-height: 40px;
+    }
+    .ingredients{
+        width: 45%;
+        
+        ul{
+            list-style:lower-greek;
+            li{
+                border-bottom: 1px dotted #e0e0e0;
+                line-height: 20px;
+            }
+        }
+    
+    }
+    .directions{
+        width: 45%;
+        
+        ol{
+            list-style: lower-roman;
+        }
+        
+
+    }
+}
