@@ -1,0 +1,47 @@
+body {
+  margin: 0; }
+
+.ribbon {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  line-height: 38px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e0e0; }
+  .header .title {
+    color: limegreen; }
+
+#hero {
+  background-image: url(../images/midterm/hero-tall-002.jpg);
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-between; }
+  #hero #hero-right {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
+    padding: 20px; }
+    #hero #hero-right input {
+      line-height: 30px;
+      display: block;
+      margin: 20px 0;
+      border-radius: 4px;
+      padding: 0 0 0 10px;
+      width: 250px; }
+    #hero #hero-right button {
+      width: 250px;
+      background-color: #17a061;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      line-height: 38px;
+      font-weight: 700; }
+
+/*# sourceMappingURL=midterm.css.map */
