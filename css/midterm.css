@@ -1,23 +1,27 @@
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: sans-serif; }
 
 .ribbon {
   display: flex;
   justify-content: space-between;
   background-color: black;
   color: white;
-  line-height: 38px; }
+  line-height: 38px;
+  padding: 0 10px; }
 
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #e0e0e0; }
+  background-color: #e0e0e0;
+  line-height: 50px;
+  padding: 0 10px; }
   .header .title {
-    color: limegreen; }
+    color: #328a64; }
 
 #hero {
   background-image: url(../images/midterm/hero-tall-002.jpg);
-  height: 500px;
+  height: 550px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -37,11 +41,74 @@ body {
       width: 250px; }
     #hero #hero-right button {
       width: 250px;
-      background-color: #17a061;
+      background-color: #328a64;
       border: none;
       border-radius: 5px;
       color: white;
       line-height: 38px;
       font-weight: 700; }
+  #hero #hero-left {
+    color: #ffffff; }
+    #hero #hero-left > img {
+      margin-bottom: -155px; }
+
+.flex {
+  display: flex; }
+  .flex.just-start {
+    justify-content: flex-start; }
+  .flex.just-end {
+    justify-content: flex-end; }
+  .flex.just-between {
+    justify-content: space-between; }
+
+.caps {
+  text-transform: uppercase; }
+
+.lead {
+  font-size: 26px; }
+  .lead.small {
+    font-size: 18px; }
+
+.greencta {
+  background: #40af7f;
+  border-radius: 2px;
+  width: 170px;
+  padding: 10px;
+  margin: 10px;
+  transition: all .5s; }
+  .greencta:hover {
+    background: #246549; }
+  .greencta ul {
+    list-style: none;
+    padding: 0; }
+
+.learnmore {
+  border-left: 1px solid #e0e0e0;
+  margin: 10px;
+  padding: 10px;
+  width: 400px; }
+  .learnmore a {
+    color: #7db658;
+    text-decoration: none; }
+
+img.icon.x3 {
+  max-width: 50px;
+  max-height: 50px;
+  display: block;
+  margin: auto; }
+
+.strong {
+  font-weight: 900; }
+
+.footer {
+  background-color: #424242;
+  padding: 20px;
+  margin: 0 0 -20px 0;
+  color: white; }
+  .footer a {
+    color: white; }
+  .footer ul {
+    list-style: none;
+    padding: 0; }
 
 /*# sourceMappingURL=midterm.css.map */
