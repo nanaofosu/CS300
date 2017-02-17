@@ -1,12 +1,23 @@
 //Variables
-$green: #328a64;
-$darkGreen: darken($green, 10%);
-$lightGreen: lighten($green, 10%);
+$green: #17a061;
+$darkGreen: #145434;
+$lightGreen:$green;
 $dullGreen: #7db658;
+$blue: #0c6ea2;
+
 
 body{
     margin: 0;
     font-family: sans-serif;
+}
+
+a{
+    color: $blue;
+    text-decoration: none;
+}
+
+h3{
+    line-height: 10px;
 }
 
 .ribbon{
@@ -28,11 +39,18 @@ body{
         color: $green;
         
     }
+    
+    .mylab {
+        img {
+            margin-bottom: -4px;
+            padding-right: 10px;
+        }
+    }
 }
 
 #hero{
     background-image: url(../images/midterm/hero-tall-002.jpg);
-    height: 550px;
+    height: 580px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -47,12 +65,14 @@ body{
         padding: 20px;
         
         input{
-            line-height: 30px;
+            line-height: 38px;
             display: block;
             margin: 20px 0;
             border-radius: 4px;
+            border: transparent;
             padding: 0 0 0 10px;
-            width: 250px;
+            width: 240px;
+            
         }
         button{
             width: 250px;
@@ -67,8 +87,22 @@ body{
     
     #hero-left{
         color: #ffffff;
+        margin-left: 10px;
         >img{
             margin-bottom: -155px;
+        }
+    }
+}
+
+#content{
+    padding: 20px 10px 10px 10px;
+    >div{
+        max-width: 50%;
+    }
+
+    img{
+        &.img{
+          max-width: 100%;
         }
     }
 }
@@ -100,9 +134,9 @@ body{
 .greencta{
     background: $lightGreen;
     border-radius: 2px;
-    width: 170px;
+    width: 180px;
     padding: 10px;
-    margin: 10px;
+    margin: 30px;
     transition: all .5s;
     
     &:hover{
@@ -110,8 +144,12 @@ body{
     }
     
     ul{
-        list-style: none;
+        list-style: none; 
         padding: 0;
+        
+        li{
+            line-height: 28px;
+        }
     }
 }
 
@@ -134,11 +172,16 @@ img{
             display: block;
             margin: auto;
         }
+        &.x1{
+            max-width: 17px;
+             margin-bottom: -4px;
+            padding-right: 10px;
+        }
     }
 }
 
 .strong{
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .footer{
