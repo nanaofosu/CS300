@@ -1,0 +1,23 @@
+* {
+  margin: 0; }
+
+#welcome {
+  background-image: url(http://www.zooz.com/wp-content/uploads/2015/10/m3.jpg);
+  background-size: cover;
+  height: 500px; }
+  #welcome .navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px; }
+  #welcome #logo img {
+    max-width: 200px;
+    display: block; }
+  #welcome #nav-links ul {
+    display: inline-flex;
+    justify-content: space-around;
+    list-style: none; }
+    #welcome #nav-links ul li {
+      padding: 0 10px; }
+
+/*# sourceMappingURL=group.css.map */
