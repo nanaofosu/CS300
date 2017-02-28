@@ -9,7 +9,7 @@
 
 <body>
     <div class="wrapper">
-        <nav class="navbar">
+        <nav class="navbar ">
             <div class="logo">
                 <a href="#"><img src="http://www.careerbuilder.com/assets/consumer_layouts/logo-eb9422713f74cd2ce626ee322e3af58d84e17f6ea2fa253abbee48639ff78ea5.svg" alt=""></a>
                 <ul>
@@ -21,19 +21,86 @@
             </div>
             <div class="cta"> <span><i class="fa fa-lock"></i> Sign In</span>
                 <button class="signup">Sign Up</button> <a href="#">Post jobs</a> </div>
-        </nav>
-        <div class="main">
-            <div id="left">
-                <h4>Contact Info</h4> Canton, OH
-                <br> Sean Zetts
-                <br> Phone: 440-447-0001 </div>
+        </nav >
+        <div class="main ">
+            <div id="left" class="">
+                <h4>Description</h4> 
+                We have an urgent need for a UFO hunter in Canton, OH. This job required you to stay up at night staring into the sky in case a UFO shows up. 
+                <p><b>Why Canton, OH?</b></p>
+                <p>10 years ago, my Mr Johnson said he saw one and that they said they would return. We have been awaiting their return ever since. Plus this town looks like a place where aliens would come to.</p>
+                <p><strong>Salary</strong></p>
+                <p>The Salary is not much but the expeience is priceless. <br> The pay is <strong>$19,000 per year plus all  you can eat out our family diner.</strong></p>
+                </div>
             <div id="mid">
-                <h1>Front-End Web Developer</h1>
-                <h2>Canton, OH</h2> <span>
-                     <button class="green">Apply Now</button>
-                     <a href="#" class="skyblue"><i class="fa fa-envelope">Email Job</i></a>
-                     <a href="#" class="skyblue"><i class="fa fa-star-o"> Save Job</i></a>
-                 </span> </div>
+                <h1>UFO Hunter</h1>
+                <h2>Canton, OH</h2> 
+                <form action="#" id="application">
+                    <fieldset class="form-group">
+                        <h2>Personal Information</h2>
+                        <p>
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="What is your name"> </p>
+                        <p>
+                            <label for="address">Address</label>
+                            <input type="text" placeholder="Ex. 1234 S State st, Chicago, IL. 60606"> </p>
+                        <p>
+                            <label for="">Phone Number</label>
+                            <input type="text" placeholder="Ex. 123-123-1234"> </p>
+                        <p>
+                            <label for="">Email Address</label>
+                            <input type="text/email" placeholder="you@email.com"> </p>
+                        <p>
+                            <label for="">Are you authorized to work in this country</label>
+                            <select name="" id="">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="Noneya">None of your business</option>
+                            </select>
+                        </p>
+                           <p><label for="">Gender</label><br><input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other</p>
+                            
+                    </fieldset>
+                    <fieldset>
+                        <h2>Experience</h2>
+                        <p>
+                            <label for="">Have you ever seen a Unicorn?</label>
+                            <select name="" id="">
+                                <option value="yes">Yes</option>
+                                <option value="no">No I have not</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="">If you saw Big Foot, what would you do?</label>
+                            <br>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Please explain in details"></textarea>
+                        </p>
+                        <p>
+                            <label for="">Was the moon landing real?</label>
+                            <br>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Indecate Yes or No and explain your answer"></textarea>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <h2>Education</h2>
+                        <label for="">Are you educated?
+                            <br>
+                            <input type="checkbox" value="Yes">Yes
+                            <br>
+                            <input type="checkbox" value="No">No
+                            <br>
+                            <input type="checkbox" value="Enough">Enough</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <h2>Upload Your Resume</h2>
+                         <input type="file" name="fileToUpload" id="fileToUpload">
+                    </fieldset>
+                     <input type="submit" value="Apply to be a UFO hunter" class="">
+                </form>
+                
+            </div>
             <div id="right">
                 <h4>Contact Info</h4> Canton, OH
                 <br> Sean Zetts

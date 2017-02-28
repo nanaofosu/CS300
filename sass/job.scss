@@ -5,6 +5,10 @@
     margin: 0;
    
 }
+
+
+
+
 a{
     text-decoration: none;
      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -73,5 +77,73 @@ a{
         #mid{
             flex: 6;
         }
+        #left{
+            flex: 2;
+        }
+        #right{
+            flex: 2;
+        }
+    }
+}
+
+form{
+    fieldset{
+        border: none;
+        box-shadow: 0px 3px 3px #e0e0e0;
+        margin: 10px;
+        
+           
+    }
+    h2{
+        background-color: beige;
+        padding: 3px 10px;
+    }
+    input{
+        width: 400px;
+        border: none;
+        border-bottom: 5px double lighten(#000, 20%);
+        line-height: 28px;
+        
+        &:hover{
+            background: #eee;
+        }
+        
+        &[type="radio"]{
+            width: 20px;
+        }
+        
+        &[type="submit"]{
+            background-color: red;
+            width: 200px;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 3px 3px #e0e0e0;
+        }
+        &[type="file"]{
+            background-color: transparent;
+            width: 200px;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 3px 3px #e0e0e0;
+        }
+        &[type="checkbox"]{
+            width: auto;
+            
+        }
+    }
+    label{
+        width: 400px; display: inline-block;
+    }
+    p{
+        border-bottom: 1px dotted #e0e0e0;
+    }
+    select{
+        
+    }
+    textarea{
+        width: 100%;
+        border-color: #e0e0e0;
     }
 }

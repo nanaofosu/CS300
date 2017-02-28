@@ -53,5 +53,50 @@ a {
       background: white; }
     .wrapper .main #mid {
       flex: 6; }
+    .wrapper .main #left {
+      flex: 2; }
+    .wrapper .main #right {
+      flex: 2; }
+
+form fieldset {
+  border: none;
+  box-shadow: 0px 3px 3px #e0e0e0;
+  margin: 10px; }
+form h2 {
+  background-color: beige;
+  padding: 3px 10px; }
+form input {
+  width: 400px;
+  border: none;
+  border-bottom: 5px double #333333;
+  line-height: 28px; }
+  form input:hover {
+    background: #eee; }
+  form input[type="radio"] {
+    width: 20px; }
+  form input[type="submit"] {
+    background-color: red;
+    width: 200px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px #e0e0e0; }
+  form input[type="file"] {
+    background-color: transparent;
+    width: 200px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px #e0e0e0; }
+  form input[type="checkbox"] {
+    width: auto; }
+form label {
+  width: 400px;
+  display: inline-block; }
+form p {
+  border-bottom: 1px dotted #e0e0e0; }
+form textarea {
+  width: 100%;
+  border-color: #e0e0e0; }
 
 /*# sourceMappingURL=job.css.map */
