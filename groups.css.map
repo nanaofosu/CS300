@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACH,gBAAgB,EAAE,KAAK",
+"sources": ["sass/groups.scss"],
+"names": [],
+"file": "groups.css"
+}

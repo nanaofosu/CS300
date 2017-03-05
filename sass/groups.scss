@@ -1,0 +1,115 @@
+/*VARIABLES*/
+
+$yellow: #ffbe00;
+body {
+    margin: 0;
+    font-family: "Open Sans", "Helvetica", "Verdana", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.just-between {
+    justify-content: space-between;
+}
+
+.just-around {
+    justify-content: space-around;
+}
+
+.just-end {
+    justify-content: flex-end;
+}
+
+.just-start {
+    justify-content: flex-start;
+}
+
+.just-center {
+    justify-content: center;
+    ;
+}
+
+.header {
+    &.test {
+//        background-image: url("../images/group/test.jpg");
+        background-image: url("https://thumbs.dreamstime.com/z/young-dog-playing-9464728.jpg");
+    }
+    .home {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: space-between;
+        height: 500px;
+        .logo {
+            flex: 3;
+            align-self: center;
+            img {
+                height: 70px;
+                display: block;
+                margin: auto;
+            }
+        }
+        .navigation {
+            flex: 9;
+            align-self: center;
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                 
+            
+                li {
+                    width: auto;
+                    transition: all .3s ease-in;
+                    
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                    
+                   
+                    
+                    a {
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        transition: all .1s ease-in-out;
+                        border-top: 0px solid $yellow;
+                        border-bottom: 3px solid $yellow;
+                        padding: 10px;
+                        
+                        &:hover {
+                            border-top: 3px solid $yellow;
+                            border-bottom: 0px solid $yellow;
+                            
+                        }
+                    }
+                }
+                li:hover ~ li{
+                    transform: scale(.5);
+                }
+                
+               
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $yellow;
+    padding: 20px;
+    
+    .fa{
+        color: white;
+    }
+    .logo {
+        img {
+            width: 300px;
+        }
+    }
+}
+

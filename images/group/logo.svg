@@ -19,7 +19,15 @@
   <defs      id="defs2" />
     <style>
         
-    
+   .path{
+        stroke: white;
+        stroke-linecap: butt;   
+        fill: yellow;
+        }
+        
+     
+
+   
     </style>
   <sodipodi:namedview
      id="base"

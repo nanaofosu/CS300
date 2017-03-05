@@ -1,0 +1,75 @@
+/*VARIABLES*/
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica", "Verdana", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.flex {
+  display: flex; }
+
+.just-between {
+  justify-content: space-between; }
+
+.just-around {
+  justify-content: space-around; }
+
+.just-end {
+  justify-content: flex-end; }
+
+.just-start {
+  justify-content: flex-start; }
+
+.just-center {
+  justify-content: center; }
+
+.header.test {
+  background-image: url("https://thumbs.dreamstime.com/z/young-dog-playing-9464728.jpg"); }
+.header .home {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  height: 500px; }
+  .header .home .logo {
+    flex: 3;
+    align-self: center; }
+    .header .home .logo img {
+      height: 70px;
+      display: block;
+      margin: auto; }
+  .header .home .navigation {
+    flex: 9;
+    align-self: center; }
+    .header .home .navigation ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around; }
+      .header .home .navigation ul li {
+        width: auto;
+        transition: all .3s ease-in; }
+        .header .home .navigation ul li:hover {
+          transform: scale(1.5); }
+        .header .home .navigation ul li a {
+          color: white;
+          text-transform: uppercase;
+          font-weight: 600;
+          transition: all .1s ease-in-out;
+          border-top: 0px solid #ffbe00;
+          border-bottom: 3px solid #ffbe00;
+          padding: 10px; }
+          .header .home .navigation ul li a:hover {
+            border-top: 3px solid #ffbe00;
+            border-bottom: 0px solid #ffbe00; }
+      .header .home .navigation ul li:hover ~ li {
+        transform: scale(0.5); }
+
+.footer {
+  background-color: #ffbe00;
+  padding: 20px; }
+  .footer .fa {
+    color: white; }
+  .footer .logo img {
+    width: 300px; }
+
+/*# sourceMappingURL=groups.css.map */
