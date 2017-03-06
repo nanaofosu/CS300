@@ -35,16 +35,30 @@ a {
     ;
 }
 
+.laptop {
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}
+
+.mobiles {
+    @media screen and (max-width: 800px) {
+        display: block;
+    }
+}
+
 .header {
     &.test {
-//        background-image: url("../images/group/test.jpg");
+        //        background-image: url("../images/group/test.jpg");
         background-image: url("https://thumbs.dreamstime.com/z/young-dog-playing-9464728.jpg");
     }
     .home {
         background-color: rgba(0, 0, 0, 0.7);
-        display: flex;
         justify-content: space-between;
         height: 500px;
+        .fa {
+            color: white;
+        }
         .logo {
             flex: 3;
             align-self: center;
@@ -57,43 +71,73 @@ a {
         .navigation {
             flex: 9;
             align-self: center;
-            ul {
-                list-style: none;
-                display: flex;
-                justify-content: space-around;
-                 
-            
-                li {
-                    width: auto;
-                    transition: all .3s ease-in;
-                    
-                    &:hover{
-                        transform: scale(1.5);
-                    }
-                    
-                   
-                    
-                    a {
-                        color: white;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        transition: all .1s ease-in-out;
-                        border-top: 0px solid $yellow;
-                        border-bottom: 3px solid $yellow;
-                        padding: 10px;
-                        
+            &.full {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    li {
+                        width: auto;
+                        transition: all .3s ease-in;
                         &:hover {
-                            border-top: 3px solid $yellow;
-                            border-bottom: 0px solid $yellow;
+                            transform: scale(1.5);
+                        }
+                        a {
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            transition: all .1s ease-in-out;
+                            border-top: 0px solid $yellow;
+                            border-bottom: 3px solid $yellow;
+                            padding: 10px;
+                            &:hover {
+                                border-top: 3px solid $yellow;
+                                border-bottom: 0px solid $yellow;
+                            }
+                        }
+                    }
+                    li:hover ~ li {
+                        transform: scale(.5);
+                    }
+                }
+            }
+            &.tablet {
+                justify-content: flex-end;
+                ul {
+                    list-style: none;
+                    padding: 10px 10px 10px 0;
+                    //background-color: rgba(256,256,256, .7);
+                    display: none;
+                    transition: display 3s ease-in-out;
+                    li {
+                        line-height: 4em;
+                        background-color: rgba(0, 0, 0, .5);
+                        margin: 10px;
+                        text-align: center;
+                        transition: all 2 ease-in-out;
+                        i {
+                            font-size: 3vw;
                             
+                            -webkit-transition-property: all;
+                            -webkit-transition-duration: 0.3s;
+                            -webkit-transition-timing-function: ease;
+                        }
+                        
+                        a {
+                            color: white;
+                            font-size: 3vw;
+                        }
+                        
+                        &:hover{
+                            i {
+                            font-size: 1vw;
+                            
+                            transition: all 2 ease-in-out;
+                            vertical-align: middle
+                            }
                         }
                     }
                 }
-                li:hover ~ li{
-                    transform: scale(.5);
-                }
-                
-               
             }
         }
     }
@@ -102,8 +146,7 @@ a {
 .footer {
     background-color: $yellow;
     padding: 20px;
-    
-    .fa{
+    .fa {
         color: white;
     }
     .logo {
@@ -112,4 +155,3 @@ a {
         }
     }
 }
-
