@@ -33,11 +33,13 @@ a {
     display: block; } }
 
 .header.test {
-  background-image: url("https://thumbs.dreamstime.com/z/young-dog-playing-9464728.jpg"); }
+  background-image: url("http://wallpaper-gallery.net/images/cute-dog/cute-dog-14.jpg");
+  background-size: cover; }
 .header .home {
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: space-between;
-  height: 500px; }
+  height: 500px;
+  padding: 20px; }
   .header .home .fa {
     color: white; }
   .header .home .logo {
@@ -105,5 +107,9 @@ a {
     color: white; }
   .footer .logo img {
     width: 300px; }
+
+#mid-footerbar {
+  flex-wrap: wrap;
+  transition: all 2s ease-in-out; }
 
 /*# sourceMappingURL=groups.css.map */
