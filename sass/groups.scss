@@ -1,6 +1,11 @@
 /*VARIABLES*/
 
 $yellow: #ffbe00;
+$bgcolor: rgba(0, 0, 0, 0.7);
+$white: white;
+
+$footer-color: $bgcolor;   
+
 body {
     margin: 0;
     font-family: "Open Sans", "Helvetica", "Verdana", sans-serif;
@@ -55,25 +60,32 @@ a {
          
     }
     .home {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: $bgcolor;
         justify-content: space-between;
-        height: 500px;
-        padding: 20px;
+        background-blend-mode:difference;
+        height: 540px;
+        padding: 0px;
+        @media screen and (max-width: 800px) {height: 680px}
         .fa {
-            color: white;
+            color: $white;
         }
         .logo {
             flex: 3;
             align-self: center;
             img {
-                height: 70px;
+                max-height: 9em;
                 display: block;
                 margin: auto;
+                transition: all 1s ease-in-out;
+                @media screen and (max-width: 540px) {
+                    max-width: 75vw;
+                }
             }
         }
         .navigation {
             flex: 9;
             align-self: center;
+            
             &.full {
                 ul {
                     list-style: none;
@@ -107,31 +119,31 @@ a {
             &.tablet {
                 justify-content: flex-end;
                 
-                ul {
+                ul {z-index: 999;
                     list-style: none;
                     padding: 10px 10px 10px 0;
                     //background-color: rgba(256,256,256, .7);
                     display: none;
                     transition: display 3s ease-in-out;
                     li {
-                        line-height: 4em;
+                        line-height: 2em;
                         background-color: rgba(0, 0, 0, .5);
                         margin: 10px;
                         text-align: center;
                         transition: all 2 ease-in-out;
                         i {
-                            font-size: 3vw;
+                            font-size: 2em;
                             -webkit-transition-property: all;
                             -webkit-transition-duration: 0.3s;
                             -webkit-transition-timing-function: ease;
                         }
                         a {
-                            color: white;
-                            font-size: 3vw;
+                            color: $white;
+                            font-size: 2em;
                         }
                         &:hover {
                             i {
-                                font-size: 1vw;
+                                font-size: 1em;
                                 transition: all 2 ease-in-out;
                                 vertical-align: middle
                             }
@@ -140,14 +152,18 @@ a {
                 }
             }
         }
+        
+        >section{
+            padding: 0 20px;
+        }
     }
 }
 
 .footer {
-    background-color: $yellow;
+    background-color: $footer-color;
     padding: 20px;
     .fa {
-        color: white;
+        color: $white;
     }
     .logo {
         img {
@@ -161,3 +177,67 @@ a {
     transition: all 2s ease-in-out;
 }
 
+
+/*TEST WORK*/
+
+#special{
+    margin: 0;    
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            height: 600px;
+        }
+        
+        li{
+            flex:1;
+            transition: all 1s ease-in-out;
+            height: 423px;            
+            display: flex;
+            flex-direction: column-reverse;
+            
+            
+            .title{
+                background-color: $yellow;
+                text-transform: uppercase;
+                line-height: 40px;
+                color: white;
+                text-align: center;   
+                
+                
+            }
+            .text{
+                display: none;
+                transition: all 1s ease-in-out;
+                background: white;
+            }
+            &:hover{
+                flex: 3;
+                @media screen and (max-width: 500px) {
+                    flex: 5;
+                }
+                .text{
+                    display: block;
+                    height: 30%;
+                }
+            }
+            &:nth-child(1) .title{
+                    background: #100000;
+            }
+            &:nth-child(3) .title{
+                    background: darkblue;
+            }
+            &:nth-child(4) .title{
+                    background: #800000;
+            }
+            &:nth-child(5) .title{
+                    background: #400000;
+            }
+            
+        }
+    }
+}
