@@ -3,9 +3,7 @@
 $yellow: #ffbe00;
 $bgcolor: rgba(0, 0, 0, 0.7);
 $white: white;
-
-$footer-color: $bgcolor;   
-
+$footer-color: $bgcolor;
 body {
     margin: 0;
     font-family: "Open Sans", "Helvetica", "Verdana", sans-serif;
@@ -57,15 +55,16 @@ a {
         //        background-image: url("../images/group/test.jpg");
         background-image: url("http://wallpaper-gallery.net/images/cute-dog/cute-dog-14.jpg");
         background-size: cover;
-         
     }
     .home {
         background-color: $bgcolor;
         justify-content: space-between;
-        background-blend-mode:difference;
+        background-blend-mode: difference;
         height: 540px;
         padding: 0px;
-        @media screen and (max-width: 800px) {height: 680px}
+        @media screen and (max-width: 800px) {
+            height: 680px
+        }
         .fa {
             color: $white;
         }
@@ -85,7 +84,6 @@ a {
         .navigation {
             flex: 9;
             align-self: center;
-            
             &.full {
                 ul {
                     list-style: none;
@@ -118,8 +116,8 @@ a {
             }
             &.tablet {
                 justify-content: flex-end;
-                
-                ul {z-index: 999;
+                ul {
+                    z-index: 999;
                     list-style: none;
                     padding: 10px 10px 10px 0;
                     //background-color: rgba(256,256,256, .7);
@@ -152,8 +150,7 @@ a {
                 }
             }
         }
-        
-        >section{
+        >section {
             padding: 0 20px;
         }
     }
@@ -161,6 +158,7 @@ a {
 
 .footer {
     background-color: $footer-color;
+    color: white;
     padding: 20px;
     .fa {
         color: $white;
@@ -172,7 +170,7 @@ a {
     }
 }
 
-#mid-footerbar{
+#mid-footerbar {
     flex-wrap: wrap;
     transition: all 2s ease-in-out;
 }
@@ -180,64 +178,78 @@ a {
 
 /*TEST WORK*/
 
-#special{
-    margin: 0;    
-    ul{
+#special {
+    margin: 0;
+    ul {
         display: flex;
         list-style: none;
         margin: 0;
         padding: 0;
-        
         @media screen and (max-width: 500px) {
             flex-direction: column;
             height: 600px;
         }
-        
-        li{
-            flex:1;
+        li {
+            flex: 1;
             transition: all 1s ease-in-out;
-            height: 423px;            
+            height: 423px;
             display: flex;
             flex-direction: column-reverse;
-            
-            
-            .title{
+            .title {
                 background-color: $yellow;
                 text-transform: uppercase;
                 line-height: 40px;
                 color: white;
-                text-align: center;   
-                
-                
+                text-align: center;
             }
-            .text{
+            .text {
                 display: none;
                 transition: all 1s ease-in-out;
                 background: white;
+                border: 2px solid $yellow;
             }
-            &:hover{
+            &:hover {
                 flex: 3;
                 @media screen and (max-width: 500px) {
                     flex: 5;
                 }
-                .text{
+                .text {
                     display: block;
                     height: 30%;
                 }
             }
-            &:nth-child(1) .title{
+            &:nth-child(1) {
+                .title {
                     background: #100000;
+                }
+                .text {
+                    border: 2px solid #100000;
+                }
             }
-            &:nth-child(3) .title{
+            &:nth-child(3) {
+                .title {
                     background: darkblue;
+                }
+                .text {
+                    border: 2px solid darkblue;
+                }
             }
-            &:nth-child(4) .title{
+            &:nth-child(4) {
+                .title {
                     background: #800000;
+                }
+                .text {
+                    border: 2px solid #800000;
+                }
             }
-            &:nth-child(5) .title{
+            &:nth-child(5) {
+                .title {
                     background: #400000;
+                }
+                .text {
+                    border: 2px solid #400000;
+                }
             }
-            
         }
     }
 }
@@ -245,18 +257,76 @@ a {
 #home-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 2em;
-    
     .item {
-        
-    flex-basis: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-            
-        img{
-            max-width: 250px;
-           
+        flex-basis: 250px;
+        display: flex;
+        flex-direction: column;
+        .fa {
+            color: white;
+            background-color: green;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            position: relative;
+            top: 40px;
         }
+        .image {
+            height: 250px;
+            background-size: cover;
+            align-items: center;
+            .text {
+                z-index: 3;
+                position: relative;
+                top: -145px;
+                color: white;
+                padding: 20px;
+                display: none;
+            }
+            .color {
+                background: transparent;
+                height: 250px;
+                width: 100%;
+                z-index: 2;
+                // visibility: hidden;
+                transition: all .2s ease-in-out;
+            }
+        }
+        img {
+            max-width: 250px;
+        }
+        &:hover {
+            .color {
+                &:hover {
+                    background: rgba(0, 0, 0, 0.85);
+                }
+            }
+            .text {
+                display: block;
+                //font: bold 2em monospace;
+                border-right: .1em solid white;
+                //width: calc(0.05em * 14); 
+                width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                -webkit-animation: typing 2s steps(14, end), blink-caret .2s step-end infinite alternate;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
     }
 }

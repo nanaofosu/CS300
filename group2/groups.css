@@ -1,0 +1,228 @@
+/*VARIABLES*/
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica", "Verdana", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.flex {
+  display: flex; }
+
+.just-between {
+  justify-content: space-between; }
+
+.just-around {
+  justify-content: space-around; }
+
+.just-end {
+  justify-content: flex-end; }
+
+.just-start {
+  justify-content: flex-start; }
+
+.just-center {
+  justify-content: center; }
+
+@media screen and (max-width: 800px) {
+  .laptop {
+    display: none; } }
+
+@media screen and (max-width: 800px) {
+  .mobiles {
+    display: block; } }
+
+.header.test {
+  background-image: url("http://wallpaper-gallery.net/images/cute-dog/cute-dog-14.jpg");
+  background-size: cover; }
+.header .home {
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: space-between;
+  background-blend-mode: difference;
+  height: 540px;
+  padding: 0px; }
+  @media screen and (max-width: 800px) {
+    .header .home {
+      height: 680px; } }
+  .header .home .fa {
+    color: white; }
+  .header .home .logo {
+    flex: 3;
+    align-self: center; }
+    .header .home .logo img {
+      max-height: 9em;
+      display: block;
+      margin: auto;
+      transition: all 1s ease-in-out; }
+      @media screen and (max-width: 540px) {
+        .header .home .logo img {
+          max-width: 75vw; } }
+  .header .home .navigation {
+    flex: 9;
+    align-self: center; }
+    .header .home .navigation.full ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around; }
+      .header .home .navigation.full ul li {
+        width: auto;
+        transition: all .3s ease-in; }
+        .header .home .navigation.full ul li:hover {
+          transform: scale(1.5); }
+        .header .home .navigation.full ul li a {
+          color: white;
+          text-transform: uppercase;
+          font-weight: 600;
+          transition: all .1s ease-in-out;
+          border-top: 0px solid #ffbe00;
+          border-bottom: 3px solid #ffbe00;
+          padding: 10px; }
+          .header .home .navigation.full ul li a:hover {
+            border-top: 3px solid #ffbe00;
+            border-bottom: 0px solid #ffbe00; }
+      .header .home .navigation.full ul li:hover ~ li {
+        transform: scale(0.5); }
+    .header .home .navigation.tablet {
+      justify-content: flex-end; }
+      .header .home .navigation.tablet ul {
+        z-index: 999;
+        list-style: none;
+        padding: 10px 10px 10px 0;
+        display: none;
+        transition: display 3s ease-in-out; }
+        .header .home .navigation.tablet ul li {
+          line-height: 2em;
+          background-color: rgba(0, 0, 0, 0.5);
+          margin: 10px;
+          text-align: center;
+          transition: all 2 ease-in-out; }
+          .header .home .navigation.tablet ul li i {
+            font-size: 2em;
+            -webkit-transition-property: all;
+            -webkit-transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease; }
+          .header .home .navigation.tablet ul li a {
+            color: white;
+            font-size: 2em; }
+          .header .home .navigation.tablet ul li:hover i {
+            font-size: 1em;
+            transition: all 2 ease-in-out;
+            vertical-align: middle; }
+  .header .home > section {
+    padding: 0 20px; }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px; }
+  .footer .fa {
+    color: white; }
+  .footer .logo img {
+    width: 300px; }
+
+#mid-footerbar {
+  flex-wrap: wrap;
+  transition: all 2s ease-in-out; }
+
+/*TEST WORK*/
+#special {
+  margin: 0; }
+  #special ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    @media screen and (max-width: 500px) {
+      #special ul {
+        flex-direction: column;
+        height: 600px; } }
+    #special ul li {
+      flex: 1;
+      transition: all 1s ease-in-out;
+      height: 423px;
+      display: flex;
+      flex-direction: column-reverse; }
+      #special ul li .title {
+        background-color: #ffbe00;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: white;
+        text-align: center; }
+      #special ul li .text {
+        display: none;
+        transition: all 1s ease-in-out;
+        background: white; }
+      #special ul li:hover {
+        flex: 3; }
+        @media screen and (max-width: 500px) {
+          #special ul li:hover {
+            flex: 5; } }
+        #special ul li:hover .text {
+          display: block;
+          height: 30%; }
+      #special ul li:nth-child(1) .title {
+        background: #100000; }
+      #special ul li:nth-child(3) .title {
+        background: darkblue; }
+      #special ul li:nth-child(4) .title {
+        background: #800000; }
+      #special ul li:nth-child(5) .title {
+        background: #400000; }
+
+#home-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em; }
+  #home-grid .item {
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: column; }
+    #home-grid .item .fa {
+      color: white;
+      background-color: green;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      position: relative;
+      top: 40px; }
+    #home-grid .item .image {
+      background-image: url("http://www.southfloridaheadshots.com/wp-content/uploads/2014/02/corporate-headshot_2130.jpg");
+      height: 250px;
+      background-size: cover;
+      align-items: center; }
+      #home-grid .item .image .text {
+        z-index: 3;
+        position: relative;
+        top: -145px;
+        color: white;
+        padding: 20px;
+        display: none; }
+      #home-grid .item .image .color {
+        background: transparent;
+        height: 250px;
+        width: 100%;
+        z-index: 2;
+        transition: all .2s ease-in-out; }
+    #home-grid .item img {
+      max-width: 250px; }
+    #home-grid .item:hover .color:hover {
+      background: rgba(0, 0, 0, 0.85); }
+    #home-grid .item:hover .text {
+      display: block;
+      border-right: .1em solid white;
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      -webkit-animation: typing 2s steps(14, end), blink-caret 0.2s step-end infinite alternate; }
+
+@-webkit-keyframes typing {
+  from {
+    width: 0; } }
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent; } }
+
+/*# sourceMappingURL=groups.css.map */

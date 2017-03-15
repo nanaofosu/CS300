@@ -113,6 +113,7 @@ a {
 
 .footer {
   background-color: rgba(0, 0, 0, 0.7);
+  color: white;
   padding: 20px; }
   .footer .fa {
     color: white; }
@@ -150,7 +151,8 @@ a {
       #special ul li .text {
         display: none;
         transition: all 1s ease-in-out;
-        background: white; }
+        background: white;
+        border: 2px solid #ffbe00; }
       #special ul li:hover {
         flex: 3; }
         @media screen and (max-width: 500px) {
@@ -161,23 +163,75 @@ a {
           height: 30%; }
       #special ul li:nth-child(1) .title {
         background: #100000; }
+      #special ul li:nth-child(1) .text {
+        border: 2px solid #100000; }
       #special ul li:nth-child(3) .title {
         background: darkblue; }
+      #special ul li:nth-child(3) .text {
+        border: 2px solid darkblue; }
       #special ul li:nth-child(4) .title {
         background: #800000; }
+      #special ul li:nth-child(4) .text {
+        border: 2px solid #800000; }
       #special ul li:nth-child(5) .title {
         background: #400000; }
+      #special ul li:nth-child(5) .text {
+        border: 2px solid #400000; }
 
 #home-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   padding: 2em; }
   #home-grid .item {
-    flex-basis: 25%;
+    flex-basis: 250px;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    flex-direction: column; }
+    #home-grid .item .fa {
+      color: white;
+      background-color: green;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      position: relative;
+      top: 40px; }
+    #home-grid .item .image {
+      height: 250px;
+      background-size: cover;
+      align-items: center; }
+      #home-grid .item .image .text {
+        z-index: 3;
+        position: relative;
+        top: -145px;
+        color: white;
+        padding: 20px;
+        display: none; }
+      #home-grid .item .image .color {
+        background: transparent;
+        height: 250px;
+        width: 100%;
+        z-index: 2;
+        transition: all .2s ease-in-out; }
     #home-grid .item img {
       max-width: 250px; }
+    #home-grid .item:hover .color:hover {
+      background: rgba(0, 0, 0, 0.85); }
+    #home-grid .item:hover .text {
+      display: block;
+      border-right: .1em solid white;
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      -webkit-animation: typing 2s steps(14, end), blink-caret 0.2s step-end infinite alternate; }
+
+@-webkit-keyframes typing {
+  from {
+    width: 0; } }
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent; } }
 
 /*# sourceMappingURL=groups.css.map */

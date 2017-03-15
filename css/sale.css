@@ -1,0 +1,66 @@
+body {
+  background: linear-gradient(329deg, #ffff01, #004300, #000500);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName s ease infinite;
+  min-height: 100vh;
+  margin: 0; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 11% 0%; }
+  50% {
+    background-position: 90% 100%; }
+  100% {
+    background-position: 11% 0%; } }
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 11% 0%; }
+  50% {
+    background-position: 90% 100%; }
+  100% {
+    background-position: 11% 0%; } }
+@keyframes AnimationName {
+  0% {
+    background-position: 11% 0%; }
+  50% {
+    background-position: 90% 100%; }
+  100% {
+    background-position: 11% 0%; } }
+.wrapper {
+  color: white;
+  background-image: url("../images/sale/blink.png");
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .wrapper input {
+    background-color: rgba(128, 0, 0, 0.5);
+    height: 30px;
+    width: 400px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    color: yellow; }
+    .wrapper input::placeholder {
+      display: none; }
+  .wrapper button {
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 17px;
+    background: linear-gradient(329deg, black, yellow, blue, red, purple, white);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+    margin: 0;
+    color: white; }
+
+/*# sourceMappingURL=sale.css.map */
