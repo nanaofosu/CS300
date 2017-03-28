@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>WhatUpDog!</title>
-    <link rel="stylesheet" href="css/groups.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/path/to/parallax.js"></script>
@@ -12,45 +12,40 @@
 </head>
 
 <body>
+   <div class="balck"></div>
     <header class="header test ">
+        <nav class="navbar">
+           <span class="logo"><img src="images/logo_animated.svg" alt=""></span>
+            <ul class="flex just-between">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="how.html">How this works</a></li>
+                    <li><a href="login.html" id="sign-in">Sign-In</a></li>
+                     
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
 
-        <div class="home flex laptop">
-           
-            <nav class="navigation full">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">How this works</a></li>
-                    <li><a href="">Sign-In</a></li>
-                     <span class="logo"><img src="images/group/logo.svg" alt=""></span>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
-            </nav>
+        <div id="blurb">
+            <h2>Dog Walking On-Demand!</h2>
+            <p>Get a Dog Walker to Your Doorstep in Minutes</p>
+            <button id="book">BOOK A WALK!</button>
         </div>
-        <!--<div class="home  mobile"> 
-           <section>
-               <div class="flex">
-           <i id="burger" class="fa fa-bars fa-3x" aria-hidden="true"></i>
-           <div class="logo"><img src="images/group/logo.svg" alt=""></div>
-          <div class="logo"><img  src="images/group/logo_animated.svg" alt=""></div>
-           </div>
-            <nav class="navigation tablet">
-                <ul class="">
-                    <li><i class="fa fa-home"></i> <a href="">Home </a></li>
-                    <li><i class="fa fa-cogs" aria-hidden="true"></i> <a href="">How this works</a></li>
-                    <li><i class="fa fa-sign-in" aria-hidden="true"></i> <a href="">Sign-In</a></li>
-                    <li><i class="fa fa-usd" aria-hidden="true"></i>
- <a href="">Pricing</a></li>
-                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> <a href="">FAQ</a></li>
-                </ul>
-            </nav>
-           </section>
-           
-        </div>-->
+         <div id="get-started" >
+           <div class="title">Get Started Today! <i id="get-started-close" class="fa fa-close"></i></div>
+            <form action="">
+                <div><i class="fa fa-envelope"></i> <input type="text" placeholder="Email Address"></div>
+                <div><i class="fa fa-lock"></i> <input type="password" placeholder="Create a Password"></div>
+                <div><i class="fa fa-user"></i> <input type="text" placeholder="First Name"></div>
+                <div><i class="fa fa-user"></i> <input type="text" placeholder="Last Name"></div>
+                <div><i class="fa fa-phone"></i> <input type="text" placeholder="Cell Phone Number"></div>
+            </form>
+        </div>
         
     </header>
     
     <div class="main">
+   
     <!--  <div id="special">
             <ul>
                 <li style="background: url('https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg');">
@@ -75,10 +70,11 @@
                 </li>
             </ul>
         </div>-->
+        
        <div id="home-grid">
            <div class="item">
                <i class="fa fa-wheelchair "></i>
-               <div class="image" style="background-image: url('images/group/1.jpg');">
+               <div class="image" style="background-image: url('images/1.jpg');">
                    
                    <div class="color"></div>
                    <div class="text">I couldn't be happier with Cole. </div>
@@ -86,7 +82,7 @@
            </div>
            <div class="item">
                <i class="fa fa-smile-o"></i>
-               <div class="image" style="background-image: url('images/group/2.jpg');">
+               <div class="image" style="background-image: url('images/2.jpg');">
                    
                    <div class="color"></div>
                    <div class="text">This is some cool client quotes for your consideration</div>
@@ -94,7 +90,7 @@
            </div>
            <div class="item">
                <i class="fa fa-heart-o"></i>
-               <div class="image" style="background-image: url('images/group/3.jpg');">
+               <div class="image" style="background-image: url('images/3.jpg');">
                    
                    <div class="color"></div>
                    <div class="text">This is some cool client quotes for your consideration</div>
@@ -102,7 +98,7 @@
            </div>
            <div class="item">
                <i class="fa fa-handshake-o"></i>
-               <div class="image" style="background-image: url('images/group/4.jpg');">
+               <div class="image" style="background-image: url('images/4.jpg');">
                    
                    <div class="color"></div>
                    <div class="text">This is some cool client quotes for your consideration</div>
@@ -110,7 +106,7 @@
            </div>
            <div class="item">
                <i class="fa fa-snowflake-o"></i>
-               <div class="image" style="background-image: url('images/group/5.jpg');">
+               <div class="image" style="background-image: url('images/5.jpg');">
                    
                    <div class="color"></div>
                    <div class="text">This is some cool client quotes for your consideration</div>
@@ -118,7 +114,7 @@
            </div>
            <div class="item">
                <i class="fa fa-life-ring"></i>
-               <div class="image" style="background-image: url('images/group/6.jpg');">
+               <div class="image" style="background-image: url('images/6.jpg');">
                    
                    <div class="color"></div>
                    <div class="text">This is some cool client quotes for your consideration</div>
@@ -126,7 +122,7 @@
            </div>
            <div class="item">
                <i class="fa fa-thumbs-up"></i>
-               <div class="image" style="background-image: url('images/group/7.jpg');">
+               <div class="image" style="background-image: url('images/7.jpg');">
                    
                    <div class="color"></div>
                    <div class="text"></div>
@@ -134,7 +130,7 @@
            </div>
            <div class="item">
                <i class="fa fa-male"></i>
-               <div class="image" style="background-image: url('images/group/8.jpg');">
+               <div class="image" style="background-image: url('images/8.jpg');">
                    
                    <div class="color"></div>
                    <div class="text"></div>
@@ -146,7 +142,7 @@
     <footer class="footer fade-in">
         <div class="top-footerbar"></div>
         <div  id="mid-footerbar"class=" flex just-around ">
-            <div class="logo"><img src="images/group/logo_animated.svg" alt=""></div>
+            <div class="logo"><img src="images/logo_animated.svg" alt=""></div>
             <div>
                 <p class="lead"><i class="fa fa-phone"></i> Telephone</p>
                 <p>+1 800 603 6035
